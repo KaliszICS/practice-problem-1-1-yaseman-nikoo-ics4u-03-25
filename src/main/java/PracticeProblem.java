@@ -3,25 +3,29 @@ public class PracticeProblem {
 	public static void main(String args[]) {
 
 	}
-
-	public static void q1() {
-		//Write question 1 code here
+ public static int sum2D(int[][] num){
+	int sum=0;
+	for (int[] row: num){
+		for (int col: row){
+			sum=sum+col;
+		}
 	}
-
-	public static void q2() {
-		//Write question 2 code here
+	return sum;
+ }
+ public static int sumRow(int[][] num, int row){
+	int sum = 0;
+	for (int i=0; i< num[row].length; i++){
+		sum = sum+ num[row][i];
 	}
-
-	public static void q3() {
-		//Write question 3 code here
+	return sum;
+ }
+ public static int sumColumn(int[][] num, int column){
+	int sum=0;
+	for (int i=0; i<num.length; i++){
+		sum = sum+ num[i][column];
 	}
+	return sum;
+ }
 
-	public static void q4() {
-		//Write question 4 code here
-	}
+ }
 
-	public static void q5() {
-		//Write question 5 code here
-	}
-
-}
